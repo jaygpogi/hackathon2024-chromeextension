@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "HackathonEXT",
+    "description": "",
+    "version": "1.0",
+    "content_scripts": [ {
+        "matches": ["https://jira.beeline.com/browse/*"],
+        "js": ["content.js"],
+        "all_frames": true,
+        "run_at": "document_end"
+    }]
+}
