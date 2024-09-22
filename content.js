@@ -2,7 +2,7 @@ var title = document.querySelector("#summary-val").textContent;
 var description = document.querySelector("#description-val").textContent;
 
 (async () => {
-    const rawResponse = await fetch('https://hackathonapi20240922091054.azurewebsites.net/', {
+    await fetch('https://hackathonapi20240922091054.azurewebsites.net/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
