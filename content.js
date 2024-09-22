@@ -11,6 +11,9 @@ var description = document.querySelector("#description-val").textContent;
     })
     .then(response => response.json())
     .then(data => {
+        if(!data){
+          return;
+        }
         if(!data.document){
             return;
         }
